@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — CodeRise by Miami FX</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Learn more about CodeRise by Miami FX — our mission, vision, and why we help beginners rise in tech through coding education." />
+  <meta name="author" content="Miami FX" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Smooth Scroll -->
+  <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-indigo-600">CodeRise</h1>
+      <nav class="hidden md:flex space-x-6 text-gray-700 font-medium">
+        <a href="index.html" class="hover:text-indigo-600 transition">Home</a>
+        <a href="about.html" class="text-indigo-600 font-semibold">About</a>
+        <a href="courses.html" class="hover:text-indigo-600 transition">Courses</a>
+        <a href="how.html" class="hover:text-indigo-600 transition">How It Works</a>
+        <a href="register.html" class="hover:text-indigo-600 transition">Register</a>
+        <a href="contact.html" class="hover:text-indigo-600 transition">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden text-gray-700">☰</button>
+    </div>
+    <div id="menu" class="hidden md:hidden flex flex-col bg-white shadow-md p-4 space-y-3">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="text-indigo-600 font-semibold">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="how.html">How It Works</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-indigo-50 py-16 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-indigo-700">About CodeRise</h2>
+    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+      Empowering beginners to rise in tech by teaching coding skills that matter.
+    </p>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="max-w-6xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-12">
+    <div>
+      <h3 class="text-2xl font-semibold text-indigo-600 mb-4">Our Mission</h3>
+      <p class="text-gray-700 leading-relaxed">
+        At <strong>CodeRise by Miami FX</strong>, we believe coding should be accessible to everyone.  
+        Our mission is to guide beginners through the journey of learning web development step by step — 
+        from building simple websites to creating full-stack applications.
+      </p>
+    </div>
+    <div>
+      <h3 class="text-2xl font-semibold text-indigo-600 mb-4">Our Vision</h3>
+      <p class="text-gray-700 leading-relaxed">
+        We envision a future where anyone with curiosity can unlock opportunities in tech.  
+        By offering an easy-to-follow learning model (via WhatsApp and structured lessons),  
+        we make coding less intimidating and more engaging.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="bg-gray-50 py-16 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-2xl font-semibold text-indigo-600 mb-6">Why Choose CodeRise?</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl hover:-translate-y-1 transform transition duration-300">
+          <h4 class="font-semibold mb-2">Beginner-Friendly</h4>
+          <p class="text-gray-600 text-sm">No prior experience needed — we start from zero.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl hover:-translate-y-1 transform transition duration-300">
+          <h4 class="font-semibold mb-2">WhatsApp Learning</h4>
+          <p class="text-gray-600 text-sm">Learn with guidance, discussions, and tasks directly on WhatsApp.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl hover:-translate-y-1 transform transition duration-300">
+          <h4 class="font-semibold mb-2">Step-by-Step Growth</h4>
+          <p class="text-gray-600 text-sm">We help you build projects and grow your skills progressively.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-600 text-white py-6 text-center">
+    <p>&copy; 2025 CodeRise by Miami FX. All rights reserved.</p>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses — CodeRise by Miami FX</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Explore CodeRise by Miami FX courses — from HTML & CSS to JavaScript, UI/UX, and backend development." />
+  <meta name="author" content="Miami FX" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Smooth Scroll -->
+  <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-indigo-600">CodeRise</h1>
+      <nav class="hidden md:flex space-x-6 text-gray-700 font-medium">
+        <a href="index.html" class="hover:text-indigo-600 transition">Home</a>
+        <a href="about.html" class="hover:text-indigo-600 transition">About</a>
+        <a href="courses.html" class="text-indigo-600 font-semibold">Courses</a>
+        <a href="how.html" class="hover:text-indigo-600 transition">How It Works</a>
+        <a href="register.html" class="hover:text-indigo-600 transition">Register</a>
+        <a href="contact.html" class="hover:text-indigo-600 transition">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden text-gray-700">☰</button>
+    </div>
+    <div id="menu" class="hidden md:hidden flex flex-col bg-white shadow-md p-4 space-y-3">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html" class="text-indigo-600 font-semibold">Courses</a>
+      <a href="how.html">How It Works</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-indigo-50 py-16 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-indigo-700">Our Courses</h2>
+    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+      Learn coding step by step — from the very basics to advanced projects.
+    </p>
+  </section>
+
+  <!-- Course Categories -->
+  <section class="max-w-6xl mx-auto py-16 px-6 grid md:grid-cols-3 gap-8">
+
+    <!-- Beginner -->
+    <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl hover:-translate-y-1 transform transition duration-300">
+      <h3 class="text-xl font-semibold text-indigo-600 mb-3">Beginner Level</h3>
+      <ul class="text-gray-600 text-sm space-y-2">
+        <li>✔ Introduction to Coding</li>
+        <li>✔ HTML Basics</li>
+        <li>✔ CSS Styling</li>
+        <li>✔ First Mini Website Project</li>
+      </ul>
+    </div>
+
+    <!-- Intermediate -->
+    <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl hover:-translate-y-1 transform transition duration-300">
+      <h3 class="text-xl font-semibold text-indigo-600 mb-3">Intermediate Level</h3>
+      <ul class="text-gray-600 text-sm space-y-2">
+        <li>✔ JavaScript Fundamentals</li>
+        <li>✔ DOM Manipulation</li>
+        <li>✔ Responsive Design</li>
+        <li>✔ UI/UX Principles</li>
+      </ul>
+    </div>
+
+    <!-- Advanced -->
+    <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl hover:-translate-y-1 transform transition duration-300">
+      <h3 class="text-xl font-semibold text-indigo-600 mb-3">Advanced Level</h3>
+      <ul class="text-gray-600 text-sm space-y-2">
+        <li>✔ Backend Basics (Node.js / Python)</li>
+        <li>✔ APIs & Databases</li>
+        <li>✔ Deploying Websites</li>
+        <li>✔ Capstone Project</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- Learning Extras -->
+  <section class="bg-gray-50 py-16 px-6 text-center">
+    <h3 class="text-2xl font-semibold text-indigo-600 mb-6">What You’ll Gain</h3>
+    <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="font-semibold mb-2">👨‍💻 Real Skills</h4>
+        <p class="text-gray-600 text-sm">Build actual projects instead of just learning theory.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="font-semibold mb-2">🤝 Community Support</h4>
+        <p class="text-gray-600 text-sm">Learn with peers, mentors, and a supportive WhatsApp group.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="font-semibold mb-2">🚀 Career Growth</h4>
+        <p class="text-gray-600 text-sm">Gain confidence to take on freelancing, internships, or personal projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-indigo-600 text-white py-16 text-center">
+    <h3 class="text-2xl md:text-3xl font-bold mb-4">Start Learning Today</h3>
+    <p class="mb-6 text-lg">Choose your level and grow step by step with CodeRise.</p>
+    <a href="register.html" class="bg-white text-indigo-600 px-6 py-3 rounded-xl font-semibold shadow hover:bg-gray-100 transition">
+      Register Now
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-600 text-white py-6 text-center">
+    <p>&copy; 2025 CodeRise by Miami FX. All rights reserved.</p>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
