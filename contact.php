@@ -52,8 +52,8 @@ $conn->close();
         <a href="about.html" class="hover:text-indigo-600 transition">About</a>
         <a href="courses.html" class="hover:text-indigo-600 transition">Courses</a>
         <a href="how.html" class="hover:text-indigo-600 transition">How It Works</a>
-        <a href="register.html" class="hover:text-indigo-600 transition">Register</a>
-        <a href="contact.html" class="text-indigo-600 font-semibold">Contact</a>
+        <a href="register.php" class="hover:text-indigo-600 transition">Register</a>
+        <a href="contact.php" class="text-indigo-600 font-semibold">Contact</a>
       </nav>
       <button id="menu-btn" class="md:hidden text-gray-700">☰</button>
     </div>
@@ -130,4 +130,5 @@ $conn->close();
 
 </body>
 </html>
+
 
