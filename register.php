@@ -1,3 +1,37 @@
+<?php
+$servername = "localhost";
+$username = "root";  // default XAMPP username
+$password = "";      // default XAMPP password is empty
+$dbname = "coderise_db";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Get form data
+$name = $_POST['name'];
+$email = $_POST['email'];
+$level = $_POST['level'];
+
+// Insert into DB
+$sql = "INSERT INTO registrations (name, email, level) VALUES ('$name', '$email', '$level')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "<h2>✅ Registration Successful!</h2>";
+    echo "<a href='register.html'>Go Back</a>";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+?>
+
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -50,38 +84,25 @@
 
   <!-- Registration Form -->
   <section class="max-w-lg mx-auto py-16 px-6">
-    <form action="https://wa.me/2348012345678" method="get" target="_blank"
-      class="bg-white p-8 rounded-2xl shadow space-y-6">
-
-      <div>
-        <label class="block text-gray-700 font-medium mb-2">Full Name</label>
-        <input type="text" name="name" required 
-          class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 outline-none" />
-      </div>
-
-      <div>
-        <label class="block text-gray-700 font-medium mb-2">Email</label>
-        <input type="email" name="email" required 
-          class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 outline-none" />
-      </div>
-
-      <div>
-        <label class="block text-gray-700 font-medium mb-2">Preferred Level</label>
-        <select name="level" required
-          class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 outline-none">
-          <option value="">-- Select Level --</option>
-          <option>Beginner</option>
-          <option>Intermediate</option>
-          <option>Advanced</option>
-        </select>
-      </div>
-
-      <button type="submit"
-        class="w-full bg-indigo-600 text-white font-semibold py-3 rounded-lg shadow hover:bg-indigo-700 transition">
-        Submit & Join WhatsApp
-      </button>
-    </form>
-
+   <form action="register.php" method="POST" class="bg-white p-8 rounded-2xl shadow space-y-6">
+  <div>
+    <label class="block text-gray-700 font-medium mb-2">Full Name</label>
+    <input type="text" name="name" required class="w-full border border-gray-300 rounded-lg p-3">
+  </div>
+  <div>
+    <label class="block text-gray-700 font-medium mb-2">Email</label>
+    <input type="email" name="email" required class="w-full border border-gray-300 rounded-lg p-3">
+  </div>
+  <div>
+    <label class="block text-gray-700 font-medium mb-2">Preferred Level</label>
+    <select name="level" required class="w-full border border-gray-300 rounded-lg p-3">
+      <option>Beginner</option>
+      <option>Intermediate</option>
+      <option>Advanced</option>
+    </select>
+  </div>
+  <button type="submit" class="w-full bg-indigo-600 text-white font-semibold py-3 rounded-lg">Submit</button>
+</form>
     <p class="text-center mt-6 text-sm text-gray-500">
       After registering, you’ll be redirected to WhatsApp to join the learning group.
     </p>
@@ -103,3 +124,4 @@
 
 </body>
 </html>
+
